@@ -213,6 +213,4 @@ docker run -p 8000:8000 --env-file .env parent-feedback
 
 ---
 
-## 📜 License
 
-MIT (or your institution's policy).
