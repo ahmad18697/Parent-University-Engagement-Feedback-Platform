@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or "Parent–University Engagement" }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <i class="fas fa-graduation-cap"></i>
+          <h1>Parent–University Engagement</h1>
+        </div>
+        <nav class="main-nav">
+          <a href="/" class="nav-link" id="nav-home">
+            <i class="fas fa-comment"></i>
+            Submit Feedback
+          </a>
+          <a href="/feedback" class="nav-link" id="nav-admin">
+            <i class="fas fa-list"></i>
+            Admin View
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <small>&copy; {{ year }} Parent–University Engagement System</small>
+        <div class="footer-links">
+          <span><i class="fas fa-phone"></i> Support: 1-800-UNIV-HELP</span>
+          <span><i class="fas fa-envelope"></i> feedback@university.edu</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
